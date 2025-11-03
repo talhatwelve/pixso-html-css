@@ -46,8 +46,6 @@ header{
 .cta-btn.dark{
     background: var(--black); 
     position: relative;
-    top:50px;
-    right:20px;
 }
 
 
@@ -110,9 +108,12 @@ nav ul{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:100px 0 40px 77px; 
+    padding: 170px 0 40px 77px; 
     z-index: 1;
     position: relative;
+    background-image: url(images/firstpage/design.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
 .hero-section .left .counter{
@@ -121,7 +122,6 @@ nav ul{
     font-size: 42px;
     font-weight: 700;
     line-height: 132%; 
-    position:absolute;
 }
 
 .hero-section .left .counter span{
@@ -140,10 +140,12 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: end;
+    flex:1;
 }
 
 .hero-section .left .content-wrap{
     padding-right: 50px;
+    flex: 1;
 }
 
 
@@ -158,9 +160,8 @@ nav ul{
     font-weight: 700;
     letter-spacing: -2%;
     text-align: left;
-    position: relative;
-    top:-50px;
-    left:3px;
+    margin-bottom: 150px;
+
 }
 
 
@@ -200,110 +201,41 @@ nav ul{
 .arrows-area{
     display: flex;
     gap: 10px;
-    position: absolute;
-    bottom: 50px;
-    left: 300px;
+    padding-left:400px;
+    top: -50px;
+    position:relative;
+    
 
 }
 
-
-
-
-
-
-.swiper-slide:nth-child(1) .left h1{
-    top:130px;
-    font-family: 'Exo 2', sans-serif;
-}
-
-.swiper-slide:nth-child(1) .left p{
+.swiper-slide .counter {
     position: relative;
-    top:235px;
-    font-family: 'Prompt', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.swiper-slide:nth-child(1) .cta-btn.dark{
-    position: relative;
-    top:265px;
+    top: -90px; 
 }
 
 
 
 
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; 
+        }
+    .hero-section .left, .hero-section .right {
+        flex: 1 1 100%;
+        }
 
-
-
-.swiper-slide:nth-child(2) .left h1{
-    font-family: Exo 2;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
-    position: relative;
-    top:85px;
-    left:135px;
+    .left {
+        align-items: center; 
+        }
+    .left h1, .left p, .cta-btn.dark {
+        text-align: center;
+        margin: 10px 0; 
+        }
+    .hero-section .right img {
+        width: 80%;      
+        height: auto;
+        margin: 0 auto;
+        }
 }
-
-.swiper-slide:nth-child(2) .left p{
-    font-family: Prompt;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 100%;
-    letter-spacing: 2%;
-    text-align: left;
-    position: relative;
-    top:170px;
-    right:15px;
-}
-
-
-.swiper-slide:nth-child(2) .cta-btn.dark{
-    position: relative;
-    top:230px;
-    right:10px;
-}
-
-
-
-
-
-
-.swiper-slide:nth-child(3) .left h1{
-    font-family: Exo 2;
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
-    text-align: left;
-    position: relative;
-    top:90px;
-    left:142px;
-}
-
-.swiper-slide:nth-child(3) .left p{
-    font-family: Prompt;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 100%;
-    letter-spacing: 2%;
-    text-align: left;
-    position: relative;
-    top:195px;
-    right:25px;
-}
-
-
-.swiper-slide:nth-child(3) .cta-btn.dark{
-    position: relative;
-    top:270px;
-    left:40px;
-}
-
-
-
